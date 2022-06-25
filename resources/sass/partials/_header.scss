@@ -8,19 +8,21 @@ header {
     
             img {
                 width: 80px;
+                margin-right: 1.3rem;
             }
         }
     
         .menu {
             text-transform: uppercase;
             font-size: 0.9rem;
+            font-weight: 600;
             display: flex;
             justify-content: center;
             height: 100%;
             
             li {
-                line-height: 80px;
-                padding: .8rem;
+                line-height: 96px;
+                padding: 0 .8rem;
     
                 a {
                     text-decoration: none;
@@ -32,6 +34,10 @@ header {
                 }
             }
         }
+    }
+    .jumbo {
+        height: 450px;
+        background-image: url("../images/jumbotron.jpg");
     }
 
 } 

@@ -21,7 +21,7 @@
                     <a href="">Games</a>
                 </li>
                 <li>
-                    <a href="">Collectivles</a>
+                    <a href="">Collectibles</a>
                 </li>
                 <li>
                     <a href="">Videos</a>
@@ -38,4 +38,5 @@
             </ul>
         </nav>
    </div>
+   <div class = "jumbo"></div>
 </header> 
