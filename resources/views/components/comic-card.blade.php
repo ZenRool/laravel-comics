@@ -1,6 +1,8 @@
 <div class="comic_card">
-    <img src="{{ $thumb }}" alt="{{ $title }}">
-    <p>
-        {{ explode("#", $title)[0] }}
-    </p>
+    <a href="{{ url('/single-comic/' .$key) }}">
+        <img src="{{ $thumb }}" alt="{{ $title }}">
+        <p>
+            {{ explode("#", $title)[0] }}
+        </p>
+    </a>
 </div>
