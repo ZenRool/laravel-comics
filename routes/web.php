@@ -23,6 +23,10 @@ Route::get('/', function () {
 
 Route::get("single-comic/{id}", function ($id) {
     $comic = config("comics");
+    if(count($comic) <= $id ) {
+        return abort(404);
+    }
+    
     $data = [
         "comic" => $comic[$id],
     ];
