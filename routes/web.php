@@ -20,3 +20,13 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get("single-comic/{id}", function ($id) {
+    $comic = config("comics");
+    $data = [
+        "comic" => $comic[$id],
+    ];
+    return view("single", $data);
+})->name('single');
+
+
