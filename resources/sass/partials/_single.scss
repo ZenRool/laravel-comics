@@ -1,0 +1,20 @@
+.single {
+    .blue-band {
+        background-color: $primary_color;
+        height: 80px;
+        width: 100%;
+    }
+    .container {
+        position: relative;
+        .comic {
+            width: 180px;
+            height: auto;
+            position: absolute;
+            top: -340px;
+            left: 0;
+            border: 1px solid white;
+            display: flex;
+            
+        }
+    }
+}

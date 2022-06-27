@@ -101,3 +101,21 @@ img {
   margin-top: 1rem;
   font-size: 0.95rem;
 }
+
+.single .blue-band {
+  background-color: #2f82f9;
+  height: 80px;
+  width: 100%;
+}
+.single .container {
+  position: relative;
+}
+.single .container .comic {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: -340px;
+  left: 0;
+  border: 1px solid white;
+  display: flex;
+}
