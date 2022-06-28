@@ -14,9 +14,17 @@ ul {
 img {
     width: 100%;
 }
-
+a {
+    text-decoration: none;
+}
 .container {
     width: 95%;
     max-width: 1440px;
     margin: auto;
+}
+.flex {
+    display: flex;
+}
+.trasparent {
+    color: rgba($color: #ffffff, $alpha: 0.7);
 }

@@ -26,7 +26,6 @@ Route::get("single-comic/{id}", function ($id) {
     if(count($comic) <= $id ) {
         return abort(404);
     }
-    
     $data = [
         "comic" => $comic[$id],
     ];

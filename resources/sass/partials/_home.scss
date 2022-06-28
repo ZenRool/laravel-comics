@@ -22,11 +22,17 @@
             width: 210px;
             display: flex;
             flex-direction: column;
-            img {
+            .image {
                 height: 210px;
+                min-height: 210px;
                 width: 200px;
-                object-fit: cover;
-                object-position: top;
+                color: white;
+                img {
+                    object-fit: cover;
+                    object-position: top;
+                    height: 100%;
+                }
+
             }
             p {
                 color: white;

@@ -1,8 +1,12 @@
-<div class="comic_card">
-    <a href="{{ url('/single-comic/' .$key) }}">
-        <img src="{{ $thumb }}" alt="{{ $title }}">
+<a href="{{ url('/single-comic/' .$key) }}" class="comic_card">
+    
+                
+        <div class="image">
+            <img src="{{ $thumb }}" alt="{{ $title }}">
+        </div>
+             
         <p>
             {{ explode("#", $title)[0] }}
         </p>
-    </a>
-</div>
+    
+</a>

@@ -52,10 +52,22 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 95%;
   max-width: 1440px;
   margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.trasparent {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .home_page {
@@ -87,13 +99,18 @@ img {
   display: flex;
   flex-direction: column;
 }
-.home_page .comics_section .comic_card img {
+.home_page .comics_section .comic_card .image {
   height: 210px;
+  min-height: 210px;
   width: 200px;
+  color: white;
+}
+.home_page .comics_section .comic_card .image img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  height: 100%;
 }
 .home_page .comics_section .comic_card p {
   color: white;
@@ -111,11 +128,64 @@ img {
   position: relative;
 }
 .single .container .comic {
-  width: 180px;
-  height: auto;
+  width: auto;
+  height: 420px;
   position: absolute;
-  top: -340px;
+  top: -440px;
   left: 0;
   border: 1px solid white;
   display: flex;
+}
+.single .container .comic_band {
+  text-transform: uppercase;
+  background-color: #57a7ff;
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding: 0.3rem 1rem;
+  left: 0;
+}
+.single .container .comic_band_bottom {
+  bottom: 0;
+  width: 100%;
+}
+.single .container .comic_band_top {
+  top: 0;
+}
+.single .container .flex {
+  padding-top: 3rem;
+}
+.single .container .flex div {
+  padding: 0.5rem;
+}
+.single .container .flex .left {
+  width: 70%;
+}
+.single .container .flex .left h1 {
+  text-transform: uppercase;
+}
+.single .container .flex .left .flex {
+  background-color: #62b958;
+  color: white;
+  border-bottom: 1px solid #404040;
+  padding: 0;
+}
+.single .container .flex .left .flex .left {
+  border-right: 1px solid #404040;
+  display: flex;
+  justify-content: space-between;
+}
+.single .container .flex .left .flex .left .trasparent {
+  text-transform: uppercase;
+}
+.single .container .flex .left .flex .right {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.single .container .flex .left .flex .right select {
+  border: none;
+  background-color: #62b958;
+  color: white;
+  font-size: 1rem;
 }
