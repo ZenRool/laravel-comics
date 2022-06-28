@@ -54,5 +54,40 @@
                 </div>
             </div>
         </div>
+        <h2>
+            Art by
+        </h2>
+        <ul>
+            @foreach($comic["artists"] as $artist)
+                <li>
+                    {{ $artist }}
+                </li>            
+            @endforeach
+        </ul>
+        <h2>
+            write by
+        </h2>
+        <ul>
+            @foreach($comic["writers"] as $writer)
+                <li>
+                    {{ $writer }}
+                </li>            
+            @endforeach
+        </ul>
+        <h2>
+            Specs
+        </h2>
+        <p>
+            series:
+            {{ $comic["series"] }}
+        </p>
+        <p>
+            US price:
+            {{ $comic["price"] }}
+        </p>
+        <p>
+            on sale date:
+            {{ $comic["sale_date"] }}
+        </p>
     </div>
 @endsection
