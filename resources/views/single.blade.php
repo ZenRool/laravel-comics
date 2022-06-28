@@ -22,7 +22,7 @@
                     <h1>
                         {{ $comic["title"] }}
                     </h1>
-                    <div class="flex">
+                    <div class="green">
                         <div class="left">
                             <p>
                                 <span class="trasparent">
@@ -42,9 +42,16 @@
                             </select>
                         </div>
                     </div>
-
+                    <p class="description">
+                        {{  $comic["description"] }}
+                    </p>
                 </div>
-
+                <div class="right">
+                    <h2>
+                        advertisment
+                    </h2>
+                    <img src="{{ asset('images/adv.jpg') }}" alt="">
+                </div>
             </div>
         </div>
     </div>

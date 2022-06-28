@@ -35,14 +35,15 @@
         .flex {
             padding-top: 3rem;
             div {
-                padding: 0.5rem;
+                padding: 0.8rem;
             }
             .left {
-                width: 70%;
+                width: 75%;
                 h1 {
                     text-transform: uppercase;
                 }
-                .flex {
+                .green {
+                    display: flex;
                     background-color: #62b958;
                     color: white;
                     border-bottom: 1px solid #404040;
@@ -58,7 +59,7 @@
                     .right {
                         display: flex;
                         justify-content: center;
-                        width: 30%;
+                        width: 25%;
                         select {
                             border: none;
                             background-color: #62b958;
@@ -66,6 +67,19 @@
                             font-size: 1rem;
                         }
                     }
+                }
+                .description {
+                    line-height: 1.8rem;
+                    margin-top: 1rem;
+                    font-size: 1.1rem;
+                }
+            }
+            & >.right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                h2 {
+                    text-transform: uppercase;
                 }
             }
         }

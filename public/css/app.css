@@ -156,36 +156,50 @@ a {
   padding-top: 3rem;
 }
 .single .container .flex div {
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 .single .container .flex .left {
-  width: 70%;
+  width: 75%;
 }
 .single .container .flex .left h1 {
   text-transform: uppercase;
 }
-.single .container .flex .left .flex {
+.single .container .flex .left .green {
+  display: flex;
   background-color: #62b958;
   color: white;
   border-bottom: 1px solid #404040;
   padding: 0;
 }
-.single .container .flex .left .flex .left {
+.single .container .flex .left .green .left {
   border-right: 1px solid #404040;
   display: flex;
   justify-content: space-between;
 }
-.single .container .flex .left .flex .left .trasparent {
+.single .container .flex .left .green .left .trasparent {
   text-transform: uppercase;
 }
-.single .container .flex .left .flex .right {
+.single .container .flex .left .green .right {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 25%;
 }
-.single .container .flex .left .flex .right select {
+.single .container .flex .left .green .right select {
   border: none;
   background-color: #62b958;
   color: white;
   font-size: 1rem;
+}
+.single .container .flex .left .description {
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.single .container .flex > .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.single .container .flex > .right h2 {
+  text-transform: uppercase;
 }
